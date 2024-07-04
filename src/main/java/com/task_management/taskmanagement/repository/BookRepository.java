@@ -1,8 +1,8 @@
-package com.example.bookstore.repository;
+package com.task_management.taskmanagement.repository;
 
-import com.example.bookstore.entity.Author;
-import com.example.bookstore.entity.Book;
-import com.example.bookstore.entity.Genre;
+import com.task_management.taskmanagement.entity.Author;
+import com.task_management.taskmanagement.entity.Book;
+import com.task_management.taskmanagement.entity.Genre;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

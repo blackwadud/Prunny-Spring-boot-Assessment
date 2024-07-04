@@ -1,10 +1,11 @@
-package com.example.bookstore.service;
+package com.task_management.taskmanagement.service;
 
-import com.example.bookstore.dto.GenreDTO;
-import com.example.bookstore.entity.Genre;
-import com.example.bookstore.exception.ResourceNotFoundException;
-import com.example.bookstore.mapper.GenreMapper;
-import com.example.bookstore.repository.GenreRepository;
+
+import com.task_management.taskmanagement.dto.GenreDTO;
+import com.task_management.taskmanagement.entity.Genre;
+import com.task_management.taskmanagement.exceptions.ResourceNotFoundException;
+import com.task_management.taskmanagement.mapper.GenreMapper;
+import com.task_management.taskmanagement.repository.GenreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,17 +1,26 @@
-package com.example.bookstore.controller;
+package com.task_management.taskmanagement.controller;
 
-import com.example.bookstore.dto.AuthorDTO;
-import com.example.bookstore.service.AuthorService;
+
+import com.task_management.taskmanagement.dto.AuthorDTO;
+import com.task_management.taskmanagement.service.AuthorService;
+
+
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
+@Slf4j
 @RestController
 @RequestMapping("/api/authors")
 public class AuthorController {
 
+    private static final Logger log = LoggerFactory.getLogger(AuthorController.class);
     @Autowired
     private AuthorService authorService;
 
@@ -27,6 +36,7 @@ public class AuthorController {
 
     @PostMapping
     public ResponseEntity<AuthorDTO> createAuthor(@RequestBody AuthorDTO authorDTO) {
+        log.info("data it's getting{}", authorDTO);
         return ResponseEntity.ok(authorService.createAuthor(authorDTO));
     }
 

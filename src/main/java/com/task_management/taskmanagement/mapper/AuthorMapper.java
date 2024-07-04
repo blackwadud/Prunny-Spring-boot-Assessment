@@ -1,7 +1,7 @@
-package com.example.bookstore.mapper;
+package com.task_management.taskmanagement.mapper;
 
-import com.example.bookstore.dto.AuthorDTO;
-import com.example.bookstore.entity.Author;
+import com.task_management.taskmanagement.dto.AuthorDTO;
+import com.task_management.taskmanagement.entity.Author;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

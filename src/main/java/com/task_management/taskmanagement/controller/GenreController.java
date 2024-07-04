@@ -1,7 +1,7 @@
-package com.example.bookstore.controller;
+package com.task_management.taskmanagement.controller;
 
-import com.example.bookstore.dto.GenreDTO;
-import com.example.bookstore.service.GenreService;
+import com.task_management.taskmanagement.dto.GenreDTO;
+import com.task_management.taskmanagement.service.GenreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
